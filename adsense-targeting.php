@@ -46,7 +46,7 @@ function at_register_links($links, $file) {
 	if ($file == $base) :
 		
 		$links[] = '<a href="http://wordpress.org/extend/plugins/adsense-targeting/faq/" target="_blank">'.__('FAQ','adsense-targeting').'</a>';
-		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GTBQ93W3FCKKC" target="_blank">'.__('Donate','adsense-targeting').'</a>';
+		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W4ZPZHXCBEGE6" target="_blank">'.__('Donate','adsense-targeting').'</a>';
 	
 	endif;
 	
