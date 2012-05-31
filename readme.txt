@@ -1,6 +1,6 @@
 === AdSense Targeting ===
 Contributors: tepelstreel
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GTBQ93W3FCKKC
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W4ZPZHXCBEGE6
 Tags: Adsense, google adsense, adsense tags, adsense targeting, ads, google ads, monetize
 Requires at least: 0.7
 Tested up to: 3.4
