@@ -12,10 +12,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: adsense-targeting.php:33
-msgid "Sorry, you don&#39;t have direct access to this page."
-msgstr ""
-
 #: adsense-targeting.php:48
 msgid "FAQ"
 msgstr ""

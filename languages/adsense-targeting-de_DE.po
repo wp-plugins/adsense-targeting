@@ -1,0 +1,44 @@
+# Copyright (C) 2012 AdSense Targeting
+# This file is distributed under the same license as the AdSense Targeting package.
+msgid ""
+msgstr ""
+"Project-Id-Version: AdSense Targeting 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/adsense-targeting\n"
+"POT-Creation-Date: 2012-05-31 04:55:18+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-07-03 08:07+0200\n"
+"Last-Translator: Waldemar Stoffel <stoffel@atelier-fuenf.de>\n"
+"Language-Team: Atelier 5 <info@atelier-fuenf.de>\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: adsense-targeting.php:48
+msgid "FAQ"
+msgstr "FAQ"
+
+#: adsense-targeting.php:49
+msgid "Donate"
+msgstr "Spenden"
+
+#. Plugin Name of the plugin/theme
+msgid "AdSense Targeting"
+msgstr "AdSense Targeting"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting"
+msgstr "http://blog.atelier-fuenf.de/wordpress-plugins/adsense-targeting"
+
+#. Description of the plugin/theme
+msgid "This plugin wraps your content in Google AdSense Tags for better ad targeting. While editing your posts, you will have however the possibility to wrap part of your content in ignore tags."
+msgstr "Dieses Plugin bettet deine Artikel in Google AdSense Tags ein. Im Editor wird es einen Button geben, um nicht relevanten Text zwischen Ignore Tags zu haben."
+
+#. Author of the plugin/theme
+msgid "Waldemar Stoffel"
+msgstr "Waldemar Stoffel"
+
+#. Author URI of the plugin/theme
+msgid "http://www.waldemarstoffel.com"
+msgstr "http://www.waldemarstoffel.com"
+
