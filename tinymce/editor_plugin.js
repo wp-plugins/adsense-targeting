@@ -2,9 +2,9 @@
 
 (function() {
 	// Load plugin specific language pack
-	tinymce.PluginManager.requireLangPack('AdSenseTargeting');
+	tinymce.PluginManager.requireLangPack('GoogleIgnoreTags');
 	
-	tinymce.create('tinymce.plugins.AdSenseTargeting', {
+	tinymce.create('tinymce.plugins.GoogleIgnoreTags', {
 		/**
 		 * Initializes the plugin, this will be executed after the plugin has been created.
 		 * This call is done before the editor instance has finished it's initialization so use the onInit event
@@ -16,7 +16,7 @@
 		init : function(ed, url) {
 			// Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceExample');
 
-			ed.addCommand('mceAdSenseTargeting', function(){
+			ed.addCommand('mceGoogleIgnoreTags', function(){
 				
 				if (ed.selection.isCollapsed())	return;
 				
@@ -28,15 +28,15 @@
             });
 
 			// Register example button
-			ed.addButton('AdSenseTargeting', {
-				title : 'AdSenseTargeting.desc',
-				cmd : 'mceAdSenseTargeting',
-				image : url + '/AdSenseTargeting.png'
+			ed.addButton('GoogleIgnoreTags', {
+				title : 'GoogleIgnoreTags.desc',
+				cmd : 'mceGoogleIgnoreTags',
+				image : url + '/GoogleIgnoreTags.png'
 			});
 			
 			ed.onNodeChange.add(function(ed, cm, n, co) {
 				
-				cm.setDisabled('AdSenseTargeting', co);
+				cm.setDisabled('GoogleIgnoreTags', co);
 			
 			});
 
@@ -64,7 +64,7 @@
 		 */
 		getInfo : function() {
 			return {
-					longname  : 'AdSenseTargeting',
+					longname  : 'GoogleIgnoreTags',
 					author 	  : 'Waldemar Stoffel',
 					authorurl : 'http://www.waldemarstoffel.com',
 					infourl   : 'http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting',
@@ -74,5 +74,5 @@
 	});
 
 	// Register plugin
-	tinymce.PluginManager.add('AdSenseTargeting', tinymce.plugins.AdSenseTargeting);
+	tinymce.PluginManager.add('GoogleIgnoreTags', tinymce.plugins.GoogleIgnoreTags);
 })();

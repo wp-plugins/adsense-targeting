@@ -3,7 +3,7 @@
 Plugin Name: AdSense Targeting
 Plugin URI: http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting
 Description: This plugin wraps your content in Google AdSense Tags for better ad targeting. While editing your posts, you will have however the possibility to wrap part of your content in ignore tags.
-Version: 1.1
+Version: 1.2
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
 License: GPL3
@@ -56,7 +56,7 @@ class AdSenseTargeting {
 	add_filter('the_excerpt', array($this, 'at_set_tags'));
 	add_action( 'wp_head', array($this, 'at_header'), 1000);
 	
-	$tinymce_button = new A5_AddMceButton ('adsense-targeting', 'AdSenseTargeting', 'mce_buttons_2');
+	$tinymce_button = new A5_AddMceButton ('adsense-targeting', 'GoogleIgnoreTags', 'mce_buttons_2');
 	
 	}
 	
