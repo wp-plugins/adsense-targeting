@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Adsense, google adsense, adsense tags, adsense targeting, ads, google ads, monetize
 Requires at least: 0.7
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.2
 
 Get the best AdSense Targeting for your Site!
 
@@ -26,6 +26,10 @@ The plugin was tested up to WP 3.5 but should work fine with any other version a
 
 No, you don't necessarily need it. But the targeting of this plugin is more accurate and simply better, than what I found on the net (including the method I used in the Ads Easy). My advise would be to disable the tags in Ads Easy and use the AdSense Targeting instead.
 
+= The plugin destroyed my editor, only the HTML part is working =
+
+That was a bug I couldn't encounter myself, because I have all ad-blockers disabled in my testing environment. The name of the TinyMCE plugin was AdSenseTargeting, which gets obviously blocked. Thus, GoogleIgnoreTags now it is and all should be fine.
+
 == Screenshots ==
 
 1. Active button in editor with text selected
@@ -33,6 +37,10 @@ No, you don't necessarily need it. But the targeting of this plugin is more accu
 3. Source code with the AdSense Tags
 
 == Changelog ==
+
+= 1.2 =
+
+* Changed the name of the TinyMCE plugin (see FAQ)
 
 = 1.1 =
 
@@ -51,3 +59,7 @@ Release
 = 1.1 =
 
 Small changes in code
+
+= 1.2 =
+
+Changed the name of the TinyMCE plugin (see FAQ)
