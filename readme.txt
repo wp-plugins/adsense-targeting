@@ -3,8 +3,8 @@ Contributors: tepelstreel
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W4ZPZHXCBEGE6
 Tags: Adsense, google adsense, adsense tags, adsense targeting, ads, google ads, monetize
 Requires at least: 0.7
-Tested up to: 3.5
-Stable tag: 1.2
+Tested up to: 3.6
+Stable tag: 1.3
 
 Get the best AdSense Targeting for your Site!
 
@@ -12,7 +12,7 @@ Get the best AdSense Targeting for your Site!
 
 To get better content in your Ads from Google they have invented the AdSense tags, which marks what is relevant text for the ads and what not. The AdSense Targeting plugin will place a beginning tag in front of every post that is displayed and an ending tag at the end of it. In the editor, you will have the possibility to set the ignore tags around some content that you think is not relevant for ads.
 
-The plugin was tested up to WP 3.5 but should work fine with any other version as well.
+The plugin was tested up to WP 3.6 but should work fine with any other version as well.
 
 == Installation ==
 
@@ -37,6 +37,10 @@ That was a bug I couldn't encounter myself, because I have all ad-blockers disab
 3. Source code with the AdSense Tags
 
 == Changelog ==
+
+= 1.3 =
+
+* Better performance
 
 = 1.2 =
 
@@ -63,3 +67,7 @@ Small changes in code
 = 1.2 =
 
 Changed the name of the TinyMCE plugin (see FAQ)
+
+= 1.3 =
+
+Better performance

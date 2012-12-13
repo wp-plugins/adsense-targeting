@@ -3,7 +3,7 @@
 Plugin Name: AdSense Targeting
 Plugin URI: http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting
 Description: This plugin wraps your content in Google AdSense Tags for better ad targeting. While editing your posts, you will have however the possibility to wrap part of your content in ignore tags.
-Version: 1.2
+Version: 1.3
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
 License: GPL3
@@ -52,9 +52,9 @@ class AdSenseTargeting {
 	
 	add_filter('plugin_row_meta', array($this, 'at_register_links'),10,2);
 	add_shortcode( 'at_ignore_tag', array($this, 'at_wrap_ignore'));
-	add_filter('the_content', array($this, 'at_set_tags'));
-	add_filter('the_excerpt', array($this, 'at_set_tags'));
-	add_action( 'wp_head', array($this, 'at_header'), 1000);
+	add_filter('loop_start', array($this, 'google_start'));
+	add_filter('loop_end', array($this, 'google_end'));
+	add_action('wp_head', array($this, 'at_header'), 1000);
 	
 	$tinymce_button = new A5_AddMceButton ('adsense-targeting', 'GoogleIgnoreTags', 'mce_buttons_2');
 	
@@ -92,16 +92,21 @@ class AdSenseTargeting {
 		$eol = "\r\n";
 		
 		return $eol.'<!-- google_ad_section_end -->'.$eol.'<!-- google_ad_section_start(weight=ignore) -->'.$eol.do_shortcode($content).$eol.'<!-- google_ad_section_end -->'.$eol.'<!-- google_ad_section_start -->'.$eol;
+		
 	}
 	
-	// wrapping the content into adsense tags
+	// wrapping the loop into adsense tags
 	
-	function at_set_tags($content) {
+	function google_start() {
 		
-		$eol = "\r\n";
+		echo "<!-- google_ad_section_start -->\r\n";
 		
-		return $eol.'<!-- google_ad_section_start -->'.$eol.$content.$eol.'<!-- google_ad_section_end -->'.$eol;
+	}
 	
+	function google_end() {
+		
+		echo "<!-- google_ad_section_end -->\r\n";
+		
 	}
 	
 } // end of class
