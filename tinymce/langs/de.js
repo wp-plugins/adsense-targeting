@@ -1,6 +1,6 @@
-// German lang variables for WP2.5
+// German lang variables for WP3.5
 
 tinyMCE.addI18n({de:{
-AdsEasy:{	
+GoogleIgnoreTags:{	
 desc : 'Google Ignore Tags hinzuf\u00fcgen'
 }}});

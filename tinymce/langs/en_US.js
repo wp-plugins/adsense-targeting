@@ -1,6 +1,6 @@
-// English lang variables for WP2.5
+// English lang variables for WP3.5
 
 tinyMCE.addI18n({en_US:{
-AdsEasy:{	
+GoogleIgnoreTags:{	
 desc : 'Add Google Ignore Tags'
 }}});
