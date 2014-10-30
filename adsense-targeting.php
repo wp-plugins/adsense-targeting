@@ -3,14 +3,14 @@
 Plugin Name: AdSense Targeting
 Plugin URI: http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting
 Description: This plugin wraps your content in Google AdSense Tags for better ad targeting. While editing your posts, you will have however the possibility to wrap part of your content in ignore tags.
-Version: 1.3
+Version: 1.5
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
 License: GPL3
 Text Domain: adsense-targeting
 */
 
-/*  Copyright 2011  Waldemar Stoffel  (email : stoffel@atelier-fuenf.de)
+/*  Copyright 2011 - 2014  Waldemar Stoffel  (email : stoffel@atelier-fuenf.de)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -36,21 +36,21 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) die('Sorry,
 
 define( 'AT_PATH', plugin_dir_path(__FILE__) );
 
-if (!class_exists('A5_AddMceButton')) require_once AT_PATH.'tinymce/A5_MCEButtonClass.php';
+if (!class_exists('A5_AddMceButton')) require_once AT_PATH.'class-lib/A5_MCEButtonClass.php';
 		
 // AdSenseTargeting begin of class
 
 class AdSenseTargeting {
 	
-	static $language_file = 'adsense-targeting';
+	const language_file = 'adsense-targeting';
 	
 	function AdSenseTargeting() {
 
 	// import laguage files
 	
-	load_plugin_textdomain(self::$language_file, false , basename(dirname(__FILE__)).'/languages');
+	load_plugin_textdomain(self::language_file, false , basename(dirname(__FILE__)).'/languages');
 	
-	add_filter('plugin_row_meta', array($this, 'at_register_links'),10,2);
+	add_filter('plugin_row_meta', array($this, 'register_links'),10,2);
 	add_shortcode( 'at_ignore_tag', array($this, 'at_wrap_ignore'));
 	add_filter('loop_start', array($this, 'google_start'));
 	add_filter('loop_end', array($this, 'google_end'));
@@ -70,14 +70,14 @@ class AdSenseTargeting {
 	
 	//Additional links on the plugin page
 	
-	function at_register_links($links, $file) {
+	function register_links($links, $file) {
 		
 		$base = plugin_basename(__FILE__);
 		
 		if ($file == $base) :
 			
-			$links[] = '<a href="http://wordpress.org/extend/plugins/adsense-targeting/faq/" target="_blank">'.__('FAQ', self::$language_file).'</a>';
-			$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GTBQ93W3FCKKC" target="_blank">'.__('Donate', self::$language_file).'</a>';
+			$links[] = '<a href="http://wordpress.org/extend/plugins/adsense-targeting/faq/" target="_blank">'.__('FAQ', self::language_file).'</a>';
+			$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GTBQ93W3FCKKC" target="_blank">'.__('Donate', self::language_file).'</a>';
 		
 		endif;
 		
@@ -87,7 +87,7 @@ class AdSenseTargeting {
 	
 	// adding short code
 	
-	function at_wrap_ignore($atts, $content = null){
+	function at_wrap_ignore($atts, $content = NULL){
 		
 		$eol = "\r\n";
 		
