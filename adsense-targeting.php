@@ -3,14 +3,14 @@
 Plugin Name: AdSense Targeting
 Plugin URI: http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/adsense-targeting
 Description: This plugin wraps your content in Google AdSense Tags for better ad targeting. While editing your posts, you will have however the possibility to wrap part of your content in ignore tags.
-Version: 1.5
+Version: 1.5.1
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
 License: GPL3
 Text Domain: adsense-targeting
 */
 
-/*  Copyright 2011 - 2014  Waldemar Stoffel  (email : stoffel@atelier-fuenf.de)
+/*  Copyright 2011 - 2015  Waldemar Stoffel  (email : stoffel@atelier-fuenf.de)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
